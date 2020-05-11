@@ -1,5 +1,5 @@
 
 
-const Block = require('./Block')
-const block = new Block('foo','bar','zoo','baz') ; 
-console.log(block.toString())
+const Block = require('./block')
+const nodeBlock = Block.mineBlock(Block.genesis(),'nodecoin');
+console.log(nodeBlock.toString());
